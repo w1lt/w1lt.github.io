@@ -11,8 +11,8 @@ body {
 
 .wrapper {
   padding: 4em 2em;
-  max-width: 50%;
-  margin: 0 25%;
+  max-width: 75%;
+  margin: 0 20%;
 }
 .site-header {
   display: flex;
