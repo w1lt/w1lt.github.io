@@ -71,7 +71,7 @@ header img:hover {
   width: 800px;
   height: 800px;
   border-radius: 50% 22% 40% 80%;
-  filter: blur(100px);
+  filter: blur(150px);
   background: radial-gradient(
     circle at 50% 50%,
     rgb(7, 28, 213),
@@ -87,7 +87,7 @@ header img:hover {
   width: 800px;
   height: 800px;
   border-radius: 50% 22% 40% 80%;
-  filter: blur(100px);
+  filter: blur(175px);
   background: radial-gradient(
     circle at 50% 50%,
     rgb(187, 15, 15),
@@ -96,6 +96,7 @@ header img:hover {
   opacity: 0.15;
   z-index: -1;
 }
+
 
 p {
   margin-block-start: 0em;
