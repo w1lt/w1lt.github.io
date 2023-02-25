@@ -4,6 +4,7 @@ body {
   color: rgba(255, 255, 255, 0.75);
   background-color: rgb(18, 18, 18);
   font-family: JetBrains Mono;
+  font-size: 1rem;
 }
 ::selection {
   background: rgba(255, 255, 255, 0.25);
@@ -24,8 +25,12 @@ body {
 
 header h1:hover {
   background-color: rgba(197, 211, 47, 0.161);
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-right: 2rem;
+}
+
+u:hover {
+  background-color: rgba(197, 211, 47, 0.068);
 }
 header h1 {
   margin: 0 0 0 0;
@@ -53,7 +58,6 @@ header img {
 }
 .brand:hover {
   transform: rotate(360deg);
-  filter: blur(1px);
 }
 .navitem {
   text-decoration: none;
@@ -112,9 +116,6 @@ u {
 }
 header h1 {
   margin-bottom: 0;
-}
-a:hover {
-  color: grey;
 }
 a {
   text-decoration: none;
