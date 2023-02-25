@@ -49,15 +49,15 @@ header img {
   border-radius: 50%;
   max-width: 5em;
   max-height: 10%;
+  transition: border-radius 1s;
+}
+header img:hover {
+  border-radius: 10%;
 }
 .brand {
   margin: 0;
   padding: 0;
-  transition: transform 0.5s ease-out;
   margin-right: 1em;
-}
-.brand:hover {
-  transform: rotate(360deg);
 }
 .navitem {
   text-decoration: none;
