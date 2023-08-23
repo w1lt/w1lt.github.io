@@ -40,6 +40,8 @@ header h1 {
 
 .nav {
   margin-left: auto;
+  display: flex;
+  align-items: center; /* Align items vertically */
 }
 nav div{
   padding-bottom: .25rem;
@@ -63,9 +65,8 @@ header img:hover {
   margin-right: 1em;
 }
 .navitem {
+  margin-right: 15px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0;
 }
 .css-blurry-gradient2 {
   position: fixed;
@@ -124,12 +125,52 @@ header h1 {
 }
 a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
   margin: 0;
+  color: inherit;
 }
 section{
   padding-bottom: 1rem;
 }
 ul {
   margin-top: .5rem;
+}
+.dark-mode {
+  background-color: rgba(255, 255, 255, 0.824);
+  color: black;
+
+}
+.emoji {
+  padding: 0px;
+  font-size: 150%;
+}
+.emoji-toggle {
+  display: flex;
+  align-items: center; 
+  margin-left: auto; 
+  padding: 0px;
+  .well { 
+    cursor: pointer;
+  }
+  .toggle {
+    appearance: none;
+    background: transparent;
+    position: absolute;
+    width: 5%;
+    height: 1%;
+    cursor: pointer;
+    z-index: 100;
+
+    ~.emoji:before { 
+      content: "🌝";
+      z-index: 1;
+      transition: 0.2s;
+    }
+
+    &:checked {
+      ~.emoji:before {
+        content: "🌞";
+      }
+    }
+
+  }
 }
