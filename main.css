@@ -157,19 +157,19 @@ ul {
     background: transparent;
     position: absolute;
     width: 5%;
-    height: 1%;
+    height: 5%;
     cursor: pointer;
     z-index: 100;
 
     ~.emoji:before { 
-      content: "🌝";
+      content: "🌞";
       z-index: 1;
       transition: 0.2s;
     }
 
     &:checked {
       ~.emoji:before {
-        content: "🌞";
+        content: "🌚";
       }
     }
 
