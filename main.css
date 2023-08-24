@@ -67,7 +67,7 @@ a:hover {
 }
 .brand {
   border-radius: 50%;
-  max-width: 5em;
+  max-width: 7%;
   max-height: 10%;
   transition: border-radius 1s;
 }
