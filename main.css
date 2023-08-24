@@ -16,6 +16,19 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
+.photos {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.photos img {
+  padding: 10px;
+  max-width: 70%;
+}
+
 
 .site-header {
   display: flex;
@@ -51,13 +64,14 @@ nav div{
   color: grey;
   border-bottom: 1px dashed;
 }
-header img {
+.brand img {
   border-radius: 50%;
   max-width: 5em;
   max-height: 10%;
   transition: border-radius 1s;
 }
-header img:hover {
+
+.brand img:hover {
   border-radius: 10%;
 }
 .brand {
@@ -101,16 +115,17 @@ header img:hover {
   opacity: 0.15;
   z-index: -1;
 }
-
+section {
+  margin-bottom: 20px;
+}
 
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
-  text-indent: 10px;
+  padding-bottom: 5px;
 }
 h3 {
-  margin-bottom: 0;
-  padding-bottom: 0.1em;
+  margin: 0;
 }
 #linkedin {
   padding-top: 3em;
@@ -128,9 +143,6 @@ a {
   text-decoration: none;
   margin: 0;
   color: inherit;
-}
-section{
-  padding-bottom: 1rem;
 }
 ul {
   margin-top: .5rem;
