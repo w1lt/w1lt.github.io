@@ -61,18 +61,19 @@ header h1 {
 nav div{
   padding-bottom: .25rem;
 }
-.navitem:hover {
+a:hover {
   color: grey;
   border-bottom: 1px dashed;
 }
-.brand img {
+.brand {
   border-radius: 50%;
   max-width: 5em;
   max-height: 10%;
   transition: border-radius 1s;
 }
 
-.brand img:hover {
+.brand:hover {
+  cursor: grab;
   border-radius: 10%;
 }
 .brand {
