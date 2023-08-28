@@ -42,8 +42,7 @@ body {
 
 header h1:hover {
   background-color: rgba(197, 211, 47, 0.161);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 u:hover {
@@ -153,8 +152,11 @@ a {
 .dark-mode {
   background-color: rgba(255, 255, 255, 0.824);
   color: black;
-
 }
+.dark-mode ::selection {
+  background: rgba(105, 105, 105, 0.274);
+}
+
 ul {
   margin-top: 5px;
 }
