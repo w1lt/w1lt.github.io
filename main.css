@@ -5,8 +5,11 @@ body {
   background-color: rgb(18, 18, 18);
   font-family: JetBrains Mono;
   font-size: 1rem;
-  transition: .4s ;
+  transition: 0.4s;
   line-height: 175%;
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 ::selection {
   background: rgba(255, 255, 255, 0.25);
@@ -31,7 +34,6 @@ body {
   max-width: 70%;
 }
 
-
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -50,7 +52,7 @@ u:hover {
 }
 header h1 {
   margin: 0 0 0 0;
-  transition: padding .25s ease-out, background-color .25s ease-out;
+  transition: padding 0.25s ease-out, background-color 0.25s ease-out;
 }
 
 .nav {
@@ -58,8 +60,8 @@ header h1 {
   display: flex;
   align-items: center; /* Align items vertically */
 }
-nav div{
-  padding-bottom: .25rem;
+nav div {
+  padding-bottom: 0.25rem;
 }
 a:hover {
   color: grey;
@@ -137,7 +139,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
-u {    
+u {
   border-bottom: 1px dashed rgb(253, 253, 253);
   text-decoration: none;
 }
@@ -167,10 +169,10 @@ ul {
 }
 .emoji-toggle {
   display: flex;
-  align-items: center; 
-  margin-left: auto; 
+  align-items: center;
+  margin-left: auto;
   padding: 0px;
-  .well { 
+  .well {
     cursor: pointer;
   }
   .toggle {
@@ -183,18 +185,17 @@ ul {
     cursor: pointer;
     z-index: 100;
 
-    ~.emoji:before { 
+    ~ .emoji:before {
       content: "🌞";
       z-index: 1;
       transition: 0.2s;
     }
 
     &:checked {
-      ~.emoji:before {
+      ~ .emoji:before {
         content: "🌚";
       }
     }
-
   }
 }
 .footer {
@@ -204,6 +205,13 @@ ul {
 }
 .site-header p {
   padding: 0;
-
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
