@@ -7,9 +7,9 @@ body {
   font-size: 1rem;
   transition: 0.4s;
   line-height: 175%;
-  animation: fadeInAnimation ease 1.5s;
+  /* animation: fadeInAnimation ease 1.5s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 ::selection {
   background: rgba(255, 255, 255, 0.25);
@@ -184,18 +184,6 @@ ul {
     height: 5%;
     cursor: pointer;
     z-index: 100;
-
-    ~ .emoji:before {
-      content: "🌞";
-      z-index: 1;
-      transition: 0.2s;
-    }
-
-    &:checked {
-      ~ .emoji:before {
-        content: "🌚";
-      }
-    }
   }
 }
 .footer {
