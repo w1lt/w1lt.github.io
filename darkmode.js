@@ -1,7 +1,7 @@
 /** @format */
 
 const emoji = document.getElementById("emoji");
-
+emoji.classList.add("spinning");
 function darkMode() {
   if (document.body.classList.contains("dark-mode")) {
     document.body.classList.remove("dark-mode");
