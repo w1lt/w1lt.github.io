@@ -1,4 +1,7 @@
 /** @format */
+:root {
+  --particle-line-color: #ffffff; /* default to white */
+}
 
 body {
   color: rgba(255, 255, 255, 0.75);
@@ -199,4 +202,13 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

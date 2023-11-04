@@ -1,0 +1,2 @@
+/** @format */
+window.particleLineColor = "#ffffff";
