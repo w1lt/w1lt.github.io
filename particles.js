@@ -111,7 +111,3 @@ function initParticles(lineColor) {
     retina_detect: true,
   });
 }
-
-window.onload = function () {
-  initParticles("#ffffff");
-};
