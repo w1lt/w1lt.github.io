@@ -87,27 +87,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-@keyframes spin {
-  0% {
-    transform: rotate(-10deg);
-  }
-  25% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  75% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(-10deg);
-  }
-}
-
-.spinning {
-  animation: spin 3s linear;
-  animation-iteration-count: infinite;
-}
