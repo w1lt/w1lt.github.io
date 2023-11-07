@@ -207,7 +207,7 @@ ul {
 }
 
 .project-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .project-info {
   flex-grow: 1;
