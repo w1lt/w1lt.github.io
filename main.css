@@ -212,3 +212,57 @@ ul {
   left: 0;
   z-index: -1;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 20px; /* Add space between project items */
+  align-items: center; /* Center align the image and text */
+  position: relative; /* For positioning the pseudo-element correctly */
+  padding-right: 20px; /* Add padding to the right to make space for the divider */
+}
+
+.project-image {
+  width: 100px; /* Or any size that fits your design */
+  height: 100px; /* Making the image square */
+  object-fit: cover; /* This will ensure the image covers the area without distorting aspect ratio */
+  margin-right: 20px; /* Add space between the image and the divider */
+  border-radius: 10px;
+  position: relative; /* To properly place the pseudo-element */
+}
+
+.project-image::after {
+  content: ""; /* Necessary for a pseudo-element */
+  position: absolute;
+  right: -20px; /* Position the divider right outside the image */
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Width of the divider line */
+  background: rgb(128, 128, 128); /* Grey with 50% transparency */
+  border-radius: 1px; /* Optional: to slightly round the edges of the divider */
+}
+
+.project-info {
+  flex-grow: 1; /* Allows the text to take up the remaining space */
+}
+
+section {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.206
+  ); /* White background with 50% transparency */
+  border-radius: 15px; /* Adjust as needed for desired roundness */
+  padding: 20px; /* Add some space inside the section */
+  margin: 20px 0; /* Add some space outside the section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  backdrop-filter: blur(
+    10px
+  ); /* This will give the background a frosted-glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+}
