@@ -19,12 +19,12 @@ function darkMode() {
   particlesInstance = particlesJS("particles-js", particlesConfig);
 }
 
-if (localStorage.getItem("dark-mode") === "false") {
-  document.body.classList.remove("dark-mode");
-  emoji.innerHTML = "🌞";
-  initParticles("#ffffff");
-} else {
+if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("dark-mode");
   emoji.innerHTML = "🌚";
   initParticles("#000000");
+} else {
+  document.body.classList.remove("dark-mode");
+  emoji.innerHTML = "🌞";
+  initParticles("#ffffff");
 }

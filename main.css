@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 50px;
   max-width: 70%;
   margin: 0 auto;
@@ -42,7 +42,6 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 25px;
 }
 header h1 {
   margin: 0 0 0 0;
