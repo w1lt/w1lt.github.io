@@ -1,7 +1,6 @@
 /** @format */
 
 const emoji = document.getElementById("emoji");
-emoji.classList.add("spinning");
 function darkMode() {
   if (document.body.classList.contains("dark-mode")) {
     document.body.classList.remove("dark-mode");
@@ -20,12 +19,12 @@ function darkMode() {
   particlesInstance = particlesJS("particles-js", particlesConfig);
 }
 
-if (localStorage.getItem("dark-mode") === "true") {
-  document.body.classList.add("dark-mode");
-  emoji.innerHTML = "🌚";
-  initParticles("#000000");
-} else if (localStorage.getItem("dark-mode") === "false") {
+if (localStorage.getItem("dark-mode") === "false") {
   document.body.classList.remove("dark-mode");
   emoji.innerHTML = "🌞";
   initParticles("#ffffff");
+} else {
+  document.body.classList.add("dark-mode");
+  emoji.innerHTML = "🌚";
+  initParticles("#000000");
 }

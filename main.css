@@ -67,10 +67,6 @@ header h1 {
 nav div {
   padding-bottom: 0.25rem;
 }
-a:hover {
-  color: grey;
-  border-bottom: 1px dashed;
-}
 .brand {
   border-radius: 15%;
   max-width: 7%;
@@ -127,7 +123,7 @@ section {
 section p {
   margin-block-start: 0em;
   margin-block-end: 0em;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 h3 {
   margin: 0;
@@ -220,49 +216,35 @@ ul {
 
 .project-item {
   display: flex;
-  margin-bottom: 20px; /* Add space between project items */
-  align-items: center; /* Center align the image and text */
-  position: relative; /* For positioning the pseudo-element correctly */
-  padding-right: 20px; /* Add padding to the right to make space for the divider */
+  margin-bottom: 20px;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
 }
 
 .project-image {
-  width: 100px; /* Or any size that fits your design */
-  height: 100px; /* Making the image square */
-  object-fit: cover; /* This will ensure the image covers the area without distorting aspect ratio */
-  margin-right: 20px; /* Add space between the image and the divider */
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
   border-radius: 10px;
-  position: relative; /* To properly place the pseudo-element */
+  position: relative;
+  transition: transform 0.25s ease;
 }
 
-.project-image::after {
-  content: ""; /* Necessary for a pseudo-element */
-  position: absolute;
-  right: -20px; /* Position the divider right outside the image */
-  top: 0;
-  bottom: 0;
-  width: 2px; /* Width of the divider line */
-  background: rgb(128, 128, 128); /* Grey with 50% transparency */
-  border-radius: 1px; /* Optional: to slightly round the edges of the divider */
+.project-image:hover {
+  transform: scale(1.1);
 }
-
 .project-info {
-  flex-grow: 1; /* Allows the text to take up the remaining space */
+  flex-grow: 1;
 }
 
 section {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.206
-  ); /* White background with 50% transparency */
-  border-radius: 15px; /* Adjust as needed for desired roundness */
-  padding: 20px; /* Add some space inside the section */
-  margin: 20px 0; /* Add some space outside the section */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-  backdrop-filter: blur(
-    10px
-  ); /* This will give the background a frosted-glass effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+  background: rgba(255, 255, 255, 0.206);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
