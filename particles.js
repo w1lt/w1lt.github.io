@@ -28,7 +28,7 @@ function initParticles(lineColor) {
         },
       },
       opacity: {
-        value: 0.1,
+        value: 0.05,
         random: false,
         anim: {
           enable: false,
@@ -51,7 +51,7 @@ function initParticles(lineColor) {
         enable: true,
         distance: 150,
         color: lineColor,
-        opacity: 0.2,
+        opacity: 0.15,
         width: 1,
       },
       move: {
