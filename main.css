@@ -44,21 +44,9 @@ body {
   flex-wrap: wrap;
   padding-bottom: 25px;
 }
-
-header h1:hover {
-  background-color: rgba(197, 211, 47, 0.161);
-  padding: 10px;
-  border-bottom: none;
-}
-
-u:hover {
-  background-color: rgba(197, 211, 47, 0.068);
-}
 header h1 {
   margin: 0 0 0 0;
-  transition: padding 0.25s ease-out, background-color 0.25s ease-out;
 }
-
 .nav {
   margin-left: auto;
   display: flex;
@@ -67,19 +55,10 @@ header h1 {
 nav div {
   padding-bottom: 0.25rem;
 }
-.brand {
-  border-radius: 15%;
-  max-width: 7%;
-  max-height: 10%;
-}
-.brand {
-  margin: 0;
-  padding: 0;
-  margin-right: 1em;
-}
 .navitem {
   margin-right: 10px;
   text-decoration: none;
+  transition: transform 0.25s ease;
 }
 .css-blurry-gradient2 {
   position: fixed;
@@ -115,7 +94,14 @@ nav div {
 }
 section {
   margin-bottom: 20px;
+  transition: transform 0.25s ease;
 }
+section:hover {
+  transform: scale(1.01);
+  transform: translateZ(1.01);
+  backface-visibility: hidden;
+}
+
 .photo-disc {
   margin-top: 0;
 }
@@ -127,15 +113,6 @@ section p {
 }
 h3 {
   margin: 0;
-}
-#linkedin {
-  padding-top: 3em;
-  display: flex;
-  justify-content: center;
-}
-u {
-  border-bottom: 1px dashed rgb(253, 253, 253);
-  text-decoration: none;
 }
 header h1 {
   margin-bottom: 0;
@@ -157,6 +134,8 @@ a {
 
 ul {
   margin-top: 5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .emoji {
@@ -181,11 +160,6 @@ ul {
     cursor: pointer;
     z-index: 100;
   }
-}
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 75%;
 }
 .site-header p {
   padding: 0;
@@ -229,7 +203,7 @@ ul {
   margin-right: 20px;
   border-radius: 10px;
   position: relative;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s;
 }
 
 .project-image:hover {
@@ -245,6 +219,4 @@ section {
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
