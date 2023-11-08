@@ -219,3 +219,27 @@ section {
   margin: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 90%; /* Adjust the maximum width as desired */
+  }
+  .project-item {
+    flex-direction: column; /* Stack elements vertically */
+  }
+  .project-image {
+    margin-right: 0; /* Remove the margin on the right */
+    margin-bottom: 10px; /* Add spacing between images and text */
+  }
+  .site-header {
+    justify-content: center; /* Center content horizontally */
+  }
+
+  header h1 {
+    text-align: center; /* Center the text */
+  }
+  section h3 {
+    padding-bottom: 10px;
+  }
+  /* Add any other mobile-specific styles here */
+}
