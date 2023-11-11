@@ -225,10 +225,11 @@ section {
   .project-item {
     flex-direction: column; /* Stack elements vertically */
     padding-right: 0px;
+    text-align: center;
   }
   .project-image {
     margin-right: 0; /* Remove the margin on the right */
-    margin-bottom: 10px; /* Add spacing between images and text */
+    margin-bottom: 20px; /* Add spacing between images and text */
   }
   .site-header {
     justify-content: center; /* Center content horizontally */
