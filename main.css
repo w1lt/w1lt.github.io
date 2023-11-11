@@ -134,7 +134,6 @@ ul {
 .emoji {
   padding: 0px;
   font-size: 125%;
-  filter: grayscale(25%);
 }
 .emoji-toggle {
   display: flex;
