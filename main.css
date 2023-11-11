@@ -200,9 +200,6 @@ ul {
   transition: transform 0.25s;
 }
 
-.project-image:hover {
-  transform: scale(1.05);
-}
 .project-info {
   flex-grow: 1;
 }
