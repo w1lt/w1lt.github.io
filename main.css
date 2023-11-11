@@ -12,7 +12,7 @@ body {
   font-size: 1rem;
   transition: 0.4s;
   line-height: 175%;
-  animation: fadeInAnimation ease 1s;
+  animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -133,7 +133,8 @@ ul {
 
 .emoji {
   padding: 0px;
-  font-size: 135%;
+  font-size: 125%;
+  filter: grayscale(25%);
 }
 .emoji-toggle {
   display: flex;
@@ -258,4 +259,23 @@ section:hover {
   transform: scale(1.01);
   transform: translateZ(1.01);
   backface-visibility: hidden;
+}
+
+/* ... your existing CSS code ... */
+
+.click-indicator {
+  position: absolute;
+  top: 0px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #ffffff; /* Adjust the color as needed */
+  opacity: 25%;
+}
+
+/* ... your existing CSS code ... */
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
 }
