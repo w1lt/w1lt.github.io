@@ -224,6 +224,7 @@ section {
   }
   .project-item {
     flex-direction: column; /* Stack elements vertically */
+    padding-right: 0px;
   }
   .project-image {
     margin-right: 0; /* Remove the margin on the right */
