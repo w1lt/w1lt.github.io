@@ -51,7 +51,7 @@ header h1 {
 .nav {
   display: flex;
   align-items: center;
-  font-size: 125%;
+  font-size: 135%;
 }
 nav div {
   padding-bottom: 0.25rem;
