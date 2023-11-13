@@ -51,6 +51,7 @@ header h1 {
 .nav {
   display: flex;
   align-items: center; /* Align items vertically */
+  font-size: 115%;
 }
 nav div {
   padding-bottom: 0.25rem;
