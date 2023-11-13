@@ -51,7 +51,7 @@ header h1 {
 .nav {
   display: flex;
   align-items: center; /* Align items vertically */
-  font-size: 115%;
+  font-size: 125%;
 }
 nav div {
   padding-bottom: 0.25rem;
@@ -59,8 +59,12 @@ nav div {
 .navitem {
   margin-right: 10px;
   text-decoration: none;
-  transition: transform 0.25s ease;
+  transition: transform 0.25s;
 }
+.navitem:hover {
+  transform: translateZ(1.1);
+}
+
 .css-blurry-gradient2 {
   position: fixed;
   left: 30%;
