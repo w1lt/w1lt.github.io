@@ -298,10 +298,12 @@ section:hover {
 
 #resume iframe {
   border: none;
+  border-radius: 10px;
 }
 
 .download-button {
   padding: 1%;
+  padding-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
