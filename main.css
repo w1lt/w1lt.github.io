@@ -291,8 +291,6 @@ section:hover {
 }
 
 #resume {
-  padding-top: 5%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,4 +298,19 @@ section:hover {
 
 #resume iframe {
   border: none;
+}
+
+.download-button {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-button {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.4s;
+  margin: 10px;
 }
