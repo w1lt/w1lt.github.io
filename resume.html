@@ -65,7 +65,11 @@
           document.getElementById("date-updated").textContent = `Updated: ${dateUpdated}`;
         </script>
     <footer class="footer">
-      &copy; 2023 Will Whitehead. All rights reserved.
+      &copy; 
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      Will Whitehead. All rights reserved.
       
     </footer>
   </body>
