@@ -2,6 +2,11 @@
 
 const emoji = document.getElementById("emoji");
 function darkMode() {
+  document.getElementById("particles-js").remove();
+  const newParticles = document.createElement("div");
+  newParticles.id = "particles-js";
+  document.body.appendChild(newParticles);
+
   if (document.body.classList.contains("dark-mode")) {
     document.body.classList.remove("dark-mode");
     emoji.innerHTML = "☀";
@@ -14,9 +19,6 @@ function darkMode() {
     initParticles("#000000");
     console.log("dark mode");
   }
-  // Refresh the particles.js instance
-  particlesInstance.pJS.fn.vendors.destroypJS();
-  particlesInstance = particlesJS("particles-js", particlesConfig);
 }
 
 if (localStorage.getItem("dark-mode") === "true") {

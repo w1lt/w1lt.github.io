@@ -56,8 +56,14 @@ nav div {
   padding-bottom: 0.25rem;
 }
 .navitem {
-  margin-right: 15px;
+  margin-left: 15px;
   text-decoration: none;
+  transition: transform 0.25s;
+}
+
+.navitem:hover {
+  transform: scale(1.1) translateY(-2px) rotate(5deg);
+  cursor: pointer;
 }
 
 .css-blurry-gradient2 {
@@ -120,7 +126,13 @@ a {
 .resume-link {
   text-decoration: underline;
   color: inherit;
+  transition: font-weight 0.25s;
 }
+
+.resume-link:hover {
+  font-weight: 500;
+}
+
 .dark-mode {
   background-color: rgba(255, 255, 255, 0.824);
   color: black;
@@ -143,6 +155,7 @@ ul {
 .emoji {
   padding: 0px;
   font-size: 125%;
+  margin-left: 15px;
 }
 .emoji-toggle {
   display: flex;
@@ -183,7 +196,7 @@ header p {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 .projects {
@@ -255,10 +268,9 @@ section {
 }
 
 .project-item-container:hover {
-  transform: scale(1.01);
-  transform: translateZ(1.01);
+  transform: scale(1.01) translateY(-3px) rotate(0.25deg);
   backface-visibility: hidden;
-  cursor: pointer; /* Add cursor pointer on hover */
+  cursor: pointer;
 }
 
 .project-item-container {
@@ -266,12 +278,9 @@ section {
 }
 
 section:hover {
-  transform: scale(1.01);
-  transform: translateZ(1.01);
+  transform: scale(1.0075);
   backface-visibility: hidden;
 }
-
-/* ... your existing CSS code ... */
 
 .click-indicator {
   position: absolute;
