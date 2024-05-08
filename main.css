@@ -121,16 +121,15 @@ a {
 .resume-link {
   text-decoration: underline;
   color: inherit;
-  transition: font-weight 0.25s;
-}
-
-.resume-link:hover {
-  font-weight: 500;
 }
 
 .crown {
   color: rgb(233, 211, 87);
   transition: text-shadow 0.25s;
+}
+
+.crown:hover {
+  text-shadow: 0 0 20px rgb(233, 211, 87);
 }
 
 .dark-mode {
@@ -308,6 +307,12 @@ section:hover {
 .name {
   font-size: xx-large;
   font-weight: 200;
+  transition: font-weight 0.25s;
+}
+
+.name:hover {
+  font-weight: 500;
+  cursor: url("assets/cursor.cur"), pointer;
 }
 
 #resume {
