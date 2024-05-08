@@ -1,5 +1,5 @@
 /** @format */
-function initParticles(lineColor) {
+function initParticles() {
   particlesInstance = particlesJS("particles-js", {
     particles: {
       number: {
@@ -9,14 +9,10 @@ function initParticles(lineColor) {
           value_area: 800,
         },
       },
-      color: {
-        value: lineColor,
-      },
       shape: {
         type: "polygon",
         stroke: {
           width: 0,
-          color: lineColor,
         },
         polygon: {
           nb_sides: 6,
@@ -50,7 +46,6 @@ function initParticles(lineColor) {
       line_linked: {
         enable: true,
         distance: 150,
-        color: lineColor,
         opacity: 0.2,
         width: 1,
       },
