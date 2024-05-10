@@ -119,8 +119,8 @@ a {
 }
 
 .resume-link {
-  text-decoration: underline;
   color: inherit;
+  font-weight: 600;
 }
 
 .crown {
@@ -319,9 +319,18 @@ section:hover {
 
 .tech {
   transition: transform 0.25s;
-  font-size: 1.1em;
 }
 
-.tech:hover {
-  transform: scale(1.15);
+.techs a {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.217);
+  border-radius: 5px;
+  transition: font-weight 0.25s ease, font-size 0.1s ease;
+}
+
+.techs a:hover {
+  font-weight: 600;
 }
