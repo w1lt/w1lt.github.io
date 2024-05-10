@@ -24,7 +24,7 @@ body {
 .photos {
   padding-top: 25;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -57,7 +57,7 @@ nav div {
 }
 
 .navitem:hover {
-  transform: scale(1.1) translateY(-2px) rotate(5deg);
+  transform: scale(1.15) translateY(-2px) rotate(2deg);
   cursor: pointer;
 }
 
@@ -156,25 +156,7 @@ ul {
   font-size: 125%;
   margin-left: 15px;
 }
-.emoji-toggle {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 0px;
-  .well {
-    cursor: pointer;
-  }
-  .toggle {
-    appearance: none;
-    margin: 0;
-    background: transparent;
-    position: absolute;
-    width: 2.5%;
-    height: 5%;
-    cursor: pointer;
-    z-index: 100;
-  }
-}
+
 header p {
   padding: 0;
 }
@@ -220,6 +202,10 @@ header p {
   transition: transform 0.25s;
 }
 
+.project-image:hover {
+  transform: scale(1.05);
+}
+
 .project-info {
   flex-grow: 1;
 }
@@ -244,8 +230,8 @@ section {
     text-align: center;
   }
   .project-image {
-    margin-right: 0; /* Remove the margin on the right */
-    margin-bottom: 20px; /* Add spacing between images and text */
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   header {
     justify-content: center; /* Center content horizontally */
@@ -260,16 +246,14 @@ section {
   .nav {
     padding-top: 15px;
   }
-  /* Add any other mobile-specific styles here */
 }
 .section-container {
-  cursor: pointer; /* Add cursor pointer to indicate clickability */
+  cursor: pointer;
 }
 
 .project-item-container:hover {
   transform: scale(1.01) translateY(-3px) rotate(0.25deg);
   backface-visibility: hidden;
-  cursor: pointer;
 }
 
 .project-item-container {
@@ -287,6 +271,12 @@ section:hover {
   right: 10px;
   font-size: 18px;
   opacity: 25%;
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.project-item-container:hover .click-indicator {
+  opacity: 100%;
+  transform: scale(1.2);
 }
 
 .footer {
@@ -299,10 +289,6 @@ section:hover {
   font-size: xx-large;
   font-weight: 200;
   transition: font-weight 0.25s;
-}
-
-.name:hover {
-  cursor: url("assets/cursor.cur"), pointer;
 }
 
 #resume {
@@ -329,4 +315,13 @@ section:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tech {
+  transition: transform 0.25s;
+  font-size: 1.1em;
+}
+
+.tech:hover {
+  transform: scale(1.15);
 }
